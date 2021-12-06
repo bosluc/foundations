@@ -17,8 +17,8 @@ object GenericFunctionExercises {
   case class Pair[A](first: A, second: A) {
     // 1a. Implement `swap` which exchanges `first` and `second`
     // such as Pair("John", "Doe").swap == Pair("Doe", "John")
-    def swap: Pair[A] =
-      ???
+    def swap: Pair[A] = (second,first):Pair[A]
+
 
     // 1b. Implement `map` which applies a function to `first` and `second`
     // such as Pair("John", "Doe").map(_.length) == Pair(4,3)

@@ -1,5 +1,13 @@
 ![FP Foundation Logo](slides/docs/img/fp-tower/foundations-logo.png)<br><br>
 
+notes:
+def map[A](list: List[A], update: A => A): list[A]
+map(List(1,2,3,4), (x: Int) => x + 1)
+
+def map[From,To](list: List[From], update: From => To): List[T]
+map(users, user => user.name)
+
+
 Foundation of Functional Programming in Scala is a comprehensive, self-paced online course with no prerequisites, which 
 helps you to become a confident, productive, and powerful functional Scala developer.
 

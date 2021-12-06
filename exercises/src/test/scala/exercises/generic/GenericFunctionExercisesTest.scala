@@ -2,8 +2,8 @@ package exercises.generic
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-
 import exercises.generic.GenericFunctionExercises._
+import exercises.valfunction.ValueFunctionExercises.selectDigits
 import org.scalacheck.{Arbitrary, Gen}
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatestplus.scalacheck.ScalaCheckDrivenPropertyChecks
@@ -16,7 +16,9 @@ class GenericFunctionExercisesTest extends AnyFunSuite with ScalaCheckDrivenProp
   // Exercise 1: Pair
   ////////////////////
 
-  test("Pair swap") {}
+  test("Pair swap") {
+    assert(swap("hello4world-80") == "480")
+  }
 
   test("Pair map") {}
 
